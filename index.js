@@ -22,7 +22,7 @@ async function infoShow(e){
 
 //Api
 async function fetchData(value) {
-    const token = "7f9e78bd990115";
+    const token = "TU API TOKEN AQUI";
     const url =  `https://ipinfo.io/${value}?token=${token}`
     const res = await fetch(url);
     const json = await res.json();
