@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lector de IPS</title>
+  </head>
+  <body>
+    <header>
+        <h1>BUSCADOR DE IPS</h1>
+    </header>
+    <main>
+      <form id="form">
+        <div class="form-div">
+          <input
+            required
+            pattern="^[0-9.]+$"
+            id="input"
+            class="input"
+            type="text"
+            placeholder="Pon aqui tu ip"
+          />
+          <small>Ejemplo: 172.32.0.0</small>
+        </div>
+        <button type="submit" id="submit">Buscar Ip</button>
+      </form>
+
+      <pre class="box-info"></pre>
+      <p class="err">
+        La IP ingresada no es valida, porfavor verifique nuevamente
+      </p>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
